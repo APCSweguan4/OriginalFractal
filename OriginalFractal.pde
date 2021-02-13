@@ -44,7 +44,7 @@ public void fractal(float x, float y, float h, float w) {
   stroke((int)(Math.random() * 256), (int)(Math.random() * 256), (int)(Math.random() * 256), h);
   arc(x, y, h, w, -PI, 0);
   stroke((int)(Math.random() * 256), (int)(Math.random() * 256), (int)(Math.random() * 256), h);
-  arc(x, y - h, h, w, -PI, 0);
+  arc(x, y - (int)h, h, w, -PI, 0);
   if(w > base) {
     fractal(x, y, h / 1.2, w / 1.2); 
   }
