@@ -40,7 +40,7 @@ public void keyReleased() {
 
 public void fractal(float x, float y, float h, float w) {
   stroke((int)(Math.random() * 256), (int)(Math.random() * 256), (int)(Math.random() * 256), h);
-  arc(x, y - h, h, w, 0, PI);
+  arc(x, y - (int)h, h, w, 0, PI);
   stroke((int)(Math.random() * 256), (int)(Math.random() * 256), (int)(Math.random() * 256), h);
   arc(x, y, h, w, -PI, 0);
   stroke((int)(Math.random() * 256), (int)(Math.random() * 256), (int)(Math.random() * 256), h);
